@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand navy — sampled from the Lovereign hand/heart mark */
+  --brand-50: #eff3fa;
+  --brand-100: #dce5f2;
+  --brand-200: #b7cbe6;
+  --brand-300: #8dacd2;
+  --brand-400: #5c84b7;
+  --brand-500: #3d6699;
+  --brand-600: #2c5483;
+  --brand-700: #24426a;
+  --brand-800: #1a2f4d;
+  --brand-900: #121f36;
+  --brand-950: #0b1422;
+
+  /* Steel-blue accent — sampled from the small heart */
+  --accent-50: #f1f5fa;
+  --accent-100: #e2eaf5;
+  --accent-200: #c5d5ea;
+  --accent-300: #9fb7d9;
+  --accent-400: #7c9cc9;
+  --accent-500: #5c7fb5;
+  --accent-600: #4a6b9d;
+  --accent-700: #3c5780;
+
+  /* Lavender — sampled from the wordmark, used sparingly */
+  --lavender-50: #fbf7fd;
+  --lavender-100: #f5edfa;
+  --lavender-200: #ebddf6;
+  --lavender-300: #dcc8ed;
+  --lavender-400: #c9a8e0;
+  --lavender-500: #b186ce;
+
+  /* Warm neutrals */
+  --cream: #fbf8f4;
+  --cream-100: #f6f0e7;
+  --ink: #16223a;
+  --ink-muted: #4c5a72;
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --radius: 1rem;
 }
 
 @theme inline {
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
+
+  --color-accent-50: var(--accent-50);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+
+  --color-lavender-50: var(--lavender-50);
+  --color-lavender-100: var(--lavender-100);
+  --color-lavender-200: var(--lavender-200);
+  --color-lavender-300: var(--lavender-300);
+  --color-lavender-400: var(--lavender-400);
+  --color-lavender-500: var(--lavender-500);
+
+  --color-cream: var(--cream);
+  --color-cream-100: var(--cream-100);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-serif: var(--font-newsreader), "Iowan Old Style", "Georgia", serif;
+  --font-sans: var(--font-figtree), "Helvetica Neue", Arial, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 0.5rem);
+  --radius-md: calc(var(--radius) - 0.25rem);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 0.5rem);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@layer base {
+  * {
+    border-color: var(--cream-100);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-500);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
