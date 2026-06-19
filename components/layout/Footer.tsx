@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/siteConfig";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/layout/Logo";
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 
 const quickLinks = [
   { label: "About", href: "/about" },
@@ -12,9 +13,9 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: siteConfig.social.facebook, icon: Facebook },
-  { label: "Instagram", href: siteConfig.social.instagram, icon: Instagram },
-  { label: "LinkedIn", href: siteConfig.social.linkedin, icon: Linkedin },
+  { label: "Facebook", href: siteConfig.social.facebook, icon: FacebookIcon },
+  { label: "Instagram", href: siteConfig.social.instagram, icon: InstagramIcon },
+  { label: "LinkedIn", href: siteConfig.social.linkedin, icon: LinkedinIcon },
 ];
 
 export function Footer() {
