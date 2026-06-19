@@ -1,0 +1,80 @@
+import Image from "next/image";
+import Link from "next/link";
+import { CheckCircle2 } from "lucide-react";
+import { Container } from "@/components/ui/container";
+import { Button } from "@/components/ui/button";
+import { FadeIn } from "@/components/motion/FadeIn";
+import { siteConfig } from "@/lib/siteConfig";
+
+const expectations = [
+  "We'll listen to your situation and the kind of support your loved one needs",
+  "We'll explain how our care works and answer every question you have",
+  "We'll outline a personalized care plan and what it would look like day to day",
+  "You'll leave with clear next steps — whether or not you choose to work with us",
+];
+
+export function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-cream to-cream">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-40 right-[-10%] h-[32rem] w-[32rem] rounded-full bg-accent-200/40 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-32 left-[-10%] h-96 w-96 rounded-full bg-lavender-200/50 blur-3xl"
+      />
+
+      <Container className="relative grid gap-12 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
+        <FadeIn>
+          <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-700 shadow-sm">
+            Home Care &amp; Behavioral Support
+          </span>
+          <h1 className="mt-6 max-w-xl font-serif text-4xl font-medium leading-[1.1] text-brand-900 sm:text-5xl lg:text-[3.25rem]">
+            Compassionate home care and behavioral support —{" "}
+            <span className="italic text-brand-700">for every family, in every county.</span>
+          </h1>
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-muted">
+            At Lovereign Care Services, we provide warm, dependable care that helps your loved
+            ones live safely and comfortably at home. From everyday personal care to specialized
+            behavioral support, our caregivers treat the people you love with the dignity,
+            patience, and respect they deserve.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <Button asChild size="lg">
+              <Link href={siteConfig.ctas.findCare.href}>{siteConfig.ctas.findCare.label}</Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg">
+              <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
+            </Button>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          <div className="relative rounded-3xl border border-brand-100 bg-white/90 p-7 shadow-xl shadow-brand-900/5 backdrop-blur-sm sm:p-9">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.jpeg"
+                alt={`${siteConfig.brand} logo`}
+                width={48}
+                height={48}
+                className="h-12 w-12 rounded-full object-cover"
+              />
+              <p className="font-serif text-xl text-brand-900">
+                What to expect from your free consultation
+              </p>
+            </div>
+            <ul className="mt-6 space-y-4">
+              {expectations.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-[15px] text-ink-muted">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent-500" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </FadeIn>
+      </Container>
+    </section>
+  );
+}
