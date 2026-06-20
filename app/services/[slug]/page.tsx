@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { services, getServiceBySlug } from "@/content/services";
@@ -29,27 +28,14 @@ export default async function ServiceDetailPage(props: PageProps<"/services/[slu
 
   return (
     <article>
-      <section className="relative overflow-hidden py-20 sm:py-24">
-        <Image
-          src={service.image}
-          alt={service.imageAlt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-br from-brand-900/90 via-brand-800/80 to-brand-700/65"
-        />
-        <Container className="relative max-w-3xl">
-          <FadeIn>
-            <Badge>{service.category}</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-white sm:text-5xl">{service.title}</h1>
-            <p className="mt-7 text-lg leading-relaxed text-white/80">{service.intro}</p>
-          </FadeIn>
-        </Container>
-      </section>
+      <PageHero
+        image={service.image}
+        imageAlt={service.imageAlt}
+        badge={service.category}
+        title={service.title}
+        description={service.intro}
+        className="max-w-3xl"
+      />
 
       <section className="py-16 sm:py-20">
         <Container className="max-w-3xl">

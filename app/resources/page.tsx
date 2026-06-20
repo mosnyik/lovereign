@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { Card, CardContent } from "@/components/ui/card";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { articles } from "@/content/articles";
@@ -16,20 +16,12 @@ export const metadata: Metadata = {
 export default function ResourcesPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-cream py-16 sm:py-20">
-        <Container>
-          <FadeIn className="max-w-2xl">
-            <Badge>Resources</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">
-              Articles &amp; guidance for families
-            </h1>
-            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-              Practical reading on caregiving, aging at home, and getting started with care —
-              written for the people making these decisions, not for clinicians.
-            </p>
-          </FadeIn>
-        </Container>
-      </section>
+      <PageHero
+        image="/images/community-support.jpg"
+        badge="Resources"
+        title="Articles & guidance for families"
+        description="Practical reading on caregiving, aging at home, and getting started with care — written for the people making these decisions, not for clinicians."
+      />
 
       <section className="py-16 sm:py-20">
         <Container>

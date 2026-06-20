@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Clock, MapPin } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { ApplicationForm } from "@/components/careers/ApplicationForm";
 import { jobs, getJobBySlug } from "@/content/jobs";
@@ -23,16 +23,16 @@ export default async function JobDetailPage(props: PageProps<"/careers/[slug]">)
   if (!job) notFound();
 
   return (
-    <article className="py-16 sm:py-24">
-      <Container className="max-w-3xl">
+    <article>
+      <PageHero image="/images/careers.jpg" badge={job.type} title={job.title} className="max-w-3xl" />
+
+      <Container className="max-w-3xl py-16 sm:py-24">
         <FadeIn>
-          <Badge>{job.type}</Badge>
-          <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">{job.title}</h1>
-          <div className="mt-4 flex gap-5 text-sm text-ink-muted">
+          <div className="flex gap-5 text-sm text-ink-muted">
             <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" aria-hidden="true" />{job.type}</span>
             <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4" aria-hidden="true" />{job.county}</span>
           </div>
-          <p className="mt-7 text-lg leading-relaxed text-ink-muted">{job.description}</p>
+          <p className="mt-5 text-lg leading-relaxed text-ink-muted">{job.description}</p>
         </FadeIn>
 
         <FadeIn delay={0.06}>

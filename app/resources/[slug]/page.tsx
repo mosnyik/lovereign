@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/container";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { articles, getArticleBySlug } from "@/content/articles";
 
@@ -25,16 +25,15 @@ export default async function ArticlePage(props: PageProps<"/resources/[slug]">)
   const { default: ArticleBody } = await import(`@/content/articles/${slug}.mdx`);
 
   return (
-    <article className="py-16 sm:py-24">
-      <Container className="max-w-2xl">
-        <FadeIn>
-          <Badge>Resources</Badge>
-          <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">{article.title}</h1>
-        </FadeIn>
-        <FadeIn delay={0.06} className="mt-8">
-          <ArticleBody />
-        </FadeIn>
-      </Container>
+    <article>
+      <PageHero image="/images/community-support.jpg" badge="Resources" title={article.title} className="max-w-2xl" />
+      <div className="py-16 sm:py-24">
+        <Container className="max-w-2xl">
+          <FadeIn>
+            <ArticleBody />
+          </FadeIn>
+        </Container>
+      </div>
     </article>
   );
 }

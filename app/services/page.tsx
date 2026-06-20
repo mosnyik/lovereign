@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { services, type ServiceCategory } from "@/content/services";
@@ -21,20 +21,12 @@ const categories: ServiceCategory[] = ["Home Care", "Behavioral Support"];
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-cream py-16 sm:py-20">
-        <Container>
-          <FadeIn className="max-w-2xl">
-            <Badge>Our Services</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">
-              Support that meets every need
-            </h1>
-            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-              From everyday help at home to specialized behavioral support, every Lovereign care
-              plan is built around the person receiving it — never a one-size-fits-all template.
-            </p>
-          </FadeIn>
-        </Container>
-      </section>
+      <PageHero
+        image="/images/services-hero.jpg"
+        badge="Our Services"
+        title="Support that meets every need"
+        description="From everyday help at home to specialized behavioral support, every Lovereign care plan is built around the person receiving it — never a one-size-fits-all template."
+      />
 
       <section className="py-16 sm:py-20">
         <Container className="space-y-16">

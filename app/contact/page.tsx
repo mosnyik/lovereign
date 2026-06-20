@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CheckCircle2, Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { FamilyIntakeForm } from "@/components/contact/FamilyIntakeForm";
 import { ReferralForm } from "@/components/contact/ReferralForm";
@@ -26,21 +26,12 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-cream py-16 sm:py-20">
-        <Container>
-          <FadeIn className="max-w-2xl">
-            <Badge>Contact &amp; Referrals</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">
-              Let&apos;s talk about the care your family needs
-            </h1>
-            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-              Whether you&apos;re exploring care for a loved one or making a professional
-              referral, we&apos;re here to help. Reach out and a member of our team will get back
-              to you promptly.
-            </p>
-          </FadeIn>
-        </Container>
-      </section>
+      <PageHero
+        image="/images/home-about.jpg"
+        badge="Contact & Referrals"
+        title="Let's talk about the care your family needs"
+        description="Whether you're exploring care for a loved one or making a professional referral, we're here to help. Reach out and a member of our team will get back to you promptly."
+      />
 
       <section className="py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-[1fr_0.8fr]">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { HeartHandshake, Sparkles, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { siteConfig } from "@/lib/siteConfig";
@@ -36,16 +36,11 @@ const pillars = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-cream py-16 sm:py-20">
-        <Container>
-          <FadeIn className="max-w-2xl">
-            <Badge>About Lovereign</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">
-              Care that feels like family
-            </h1>
-          </FadeIn>
-        </Container>
-      </section>
+      <PageHero
+        image="/images/about-hero.jpg"
+        badge="About Lovereign"
+        title="Care that feels like family"
+      />
 
       <section className="py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:items-center">
