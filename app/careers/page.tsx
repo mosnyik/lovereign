@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { HeartHandshake, Clock4, GraduationCap, Users2 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Badge } from "@/components/ui/badge";
@@ -23,14 +24,26 @@ const reasons = [
 export default function CareersPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-cream py-16 sm:py-20">
-        <Container>
-          <FadeIn className="max-w-2xl">
+      <section className="relative overflow-hidden py-20 sm:py-24">
+        <Image
+          src="/images/careers.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-br from-brand-900/90 via-brand-800/80 to-brand-700/65"
+        />
+        <Container className="relative max-w-2xl">
+          <FadeIn>
             <Badge>Careers</Badge>
-            <h1 className="mt-5 font-serif text-4xl text-brand-900 sm:text-5xl">
+            <h1 className="mt-5 font-serif text-4xl text-white sm:text-5xl">
               Join a team that cares
             </h1>
-            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
+            <p className="mt-5 text-lg leading-relaxed text-white/80">
               We&apos;re always looking for compassionate, dependable caregivers who want to make
               a real difference in people&apos;s lives. If that sounds like you, we&apos;d love to
               meet you.

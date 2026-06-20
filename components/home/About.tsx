@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HeartHandshake, Sparkles, ShieldCheck } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -27,19 +28,33 @@ export function About() {
   return (
     <section className="py-20 sm:py-28">
       <Container>
-        <FadeIn className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-3xl text-brand-900 sm:text-4xl">Care that feels like family</h2>
-          <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-            Lovereign Care Services was built on a simple belief: that everyone deserves to be
-            cared for with warmth, dignity, and respect — in the comfort of their own home. We
-            support families across all counties with personalized home care and behavioral
-            support, delivered by caregivers who show up consistently and treat your loved ones
-            like their own. Whether you need a few hours of help a week or around-the-clock
-            support, we build care around the person — never a one-size-fits-all template.
-          </p>
-        </FadeIn>
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1fr] lg:items-center">
+          <FadeIn>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+              <Image
+                src="/images/home-about.jpg"
+                alt="A caregiver and an elderly client sharing a warm conversation at home"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </FadeIn>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+          <FadeIn delay={0.08}>
+            <h2 className="font-serif text-3xl text-brand-900 sm:text-4xl">Care that feels like family</h2>
+            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
+              Lovereign Care Services was built on a simple belief: that everyone deserves to be
+              cared for with warmth, dignity, and respect — in the comfort of their own home. We
+              support families across all counties with personalized home care and behavioral
+              support, delivered by caregivers who show up consistently and treat your loved ones
+              like their own. Whether you need a few hours of help a week or around-the-clock
+              support, we build care around the person — never a one-size-fits-all template.
+            </p>
+          </FadeIn>
+        </div>
+
+        <div className="mt-16 grid gap-6 sm:grid-cols-3">
           {pillars.map((pillar, i) => (
             <FadeIn key={pillar.title} delay={i * 0.08}>
               <Card className="h-full">

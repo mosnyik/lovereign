@@ -8,6 +8,8 @@ export interface Service {
   intro: string;
   includes: string[];
   closing: string;
+  image: string;
+  imageAlt: string;
 }
 
 export const services: Service[] = [
@@ -26,6 +28,8 @@ export const services: Service[] = [
       "Help with eating and staying nourished",
     ],
     closing: "We tailor every personal-care routine to the individual, and we adjust it as needs change.",
+    image: "/images/personal-care.jpg",
+    imageAlt: "An elderly couple's hands joined together, representing the dignity and trust of personal care",
   },
   {
     slug: "companion-care",
@@ -43,6 +47,8 @@ export const services: Service[] = [
       "Reminders and help staying organized",
     ],
     closing: "Companion care helps your loved one feel supported, engaged, and at ease in their own home.",
+    image: "/images/companion-care.jpg",
+    imageAlt: "A caregiver serving tea to an elderly woman in a warm, comfortable home setting",
   },
   {
     slug: "respite-care",
@@ -58,6 +64,8 @@ export const services: Service[] = [
       "Companionship and personal care during your absence",
     ],
     closing: "Respite care protects both your loved one's wellbeing and your own.",
+    image: "/images/respite-care.jpg",
+    imageAlt: "A woman relaxing peacefully on a sofa with a cup of coffee, taking a well-earned break",
   },
   {
     slug: "24-hour-live-in-care",
@@ -74,6 +82,8 @@ export const services: Service[] = [
       "Peace of mind for families living far away",
     ],
     closing: "24-hour care brings constant reassurance that someone caring is always there.",
+    image: "/images/live-in-care.jpg",
+    imageAlt: "A healthcare professional attentively checking on a resting patient",
   },
   {
     slug: "post-hospital-transitional-care",
@@ -90,6 +100,8 @@ export const services: Service[] = [
       "A watchful, caring presence as strength returns",
     ],
     closing: "We help your loved one recover where they're most comfortable — at home.",
+    image: "/images/transitional-care.jpg",
+    imageAlt: "A caregiver providing attentive support to someone using a wheelchair during recovery",
   },
   {
     slug: "behavioral-support-services",
@@ -107,6 +119,8 @@ export const services: Service[] = [
     ],
     closing:
       "TODO: Confirm exact scope, populations served, and any required clinical credentials so this copy can be finalized accurately.",
+    image: "/images/behavioral-support.jpg",
+    imageAlt: "Two women having a calm, supportive conversation together on a couch",
   },
   {
     slug: "daily-living-community-support",
@@ -123,6 +137,8 @@ export const services: Service[] = [
       "Coordination with families and support networks",
     ],
     closing: "We focus on helping each person live as fully and independently as possible.",
+    image: "/images/community-support.jpg",
+    imageAlt: "A small group of senior women enjoying a leisurely walk together outdoors",
   },
 ];
 

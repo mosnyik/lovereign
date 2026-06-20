@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -6,14 +7,17 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export function CtaBanner() {
   return (
-    <section className="relative overflow-hidden bg-brand-800 py-20 sm:py-24">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(124,156,201,0.35),_transparent_60%)]"
+    <section className="relative overflow-hidden py-24 sm:py-28">
+      <Image
+        src="/images/cta-banner.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-24 left-1/4 h-72 w-72 rounded-full bg-lavender-400/20 blur-3xl"
+        className="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/70 to-brand-800/60"
       />
       <Container className="relative text-center">
         <FadeIn>

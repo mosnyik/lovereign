@@ -15,14 +15,18 @@ const expectations = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-cream to-cream">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[32rem] w-[32rem] rounded-full bg-accent-200/40 blur-3xl"
+    <section className="relative overflow-hidden">
+      <Image
+        src="/images/hero-bg.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 left-[-10%] h-96 w-96 rounded-full bg-lavender-200/50 blur-3xl"
+        className="absolute inset-0 bg-gradient-to-br from-brand-900/90 via-brand-800/80 to-brand-700/65"
       />
 
       <Container className="relative grid gap-12 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
@@ -30,11 +34,11 @@ export function Hero() {
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-700 shadow-sm">
             Home Care &amp; Behavioral Support
           </span>
-          <h1 className="mt-6 max-w-xl font-serif text-4xl font-medium leading-[1.1] text-brand-900 sm:text-5xl lg:text-[3.25rem]">
+          <h1 className="mt-6 max-w-xl font-serif text-4xl font-medium leading-[1.1] text-white sm:text-5xl lg:text-[3.25rem]">
             Compassionate home care and behavioral support —{" "}
-            <span className="italic text-brand-700">for every family, in every county.</span>
+            <span className="italic text-lavender-200">for every family, in every county.</span>
           </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-muted">
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80">
             At Lovereign Care Services, we provide warm, dependable care that helps your loved
             ones live safely and comfortably at home. From everyday personal care to specialized
             behavioral support, our caregivers treat the people you love with the dignity,
@@ -44,7 +48,7 @@ export function Hero() {
             <Button asChild size="lg">
               <Link href={siteConfig.ctas.findCare.href}>{siteConfig.ctas.findCare.label}</Link>
             </Button>
-            <Button asChild variant="secondary" size="lg">
+            <Button asChild variant="outline" size="lg">
               <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
             </Button>
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { HeartHandshake, Sparkles, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -47,7 +48,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <Container className="max-w-3xl">
+        <Container className="grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:items-center">
           <FadeIn>
             <p className="text-lg leading-relaxed text-ink-muted">
               Lovereign Care Services was built on a simple belief: that everyone deserves to be
@@ -62,6 +63,17 @@ export default function AboutPage() {
               families peace of mind and give the people we care for a life lived with dignity,
               wherever they call home.
             </p>
+          </FadeIn>
+          <FadeIn delay={0.08}>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+              <Image
+                src="/images/about-page.jpg"
+                alt="A mother and daughter sharing a warm embrace at home"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </FadeIn>
         </Container>
       </section>

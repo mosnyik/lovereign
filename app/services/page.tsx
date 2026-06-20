@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -45,8 +46,17 @@ export default function ServicesPage() {
                   .filter((service) => service.category === category)
                   .map((service, i) => (
                     <FadeIn key={service.slug} delay={i * 0.05}>
-                      <Card className="group h-full transition-shadow hover:shadow-lg hover:shadow-brand-900/5">
-                        <CardContent className="flex h-full flex-col">
+                      <Card className="group flex h-full flex-col overflow-hidden transition-shadow hover:shadow-lg hover:shadow-brand-900/5">
+                        <div className="relative aspect-[4/3] w-full">
+                          <Image
+                            src={service.image}
+                            alt={service.imageAlt}
+                            fill
+                            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                            className="object-cover"
+                          />
+                        </div>
+                        <CardContent className="flex flex-1 flex-col">
                           <h3 className="font-serif text-xl text-brand-900">{service.title}</h3>
                           <p className="mt-2.5 flex-1 text-[15px] leading-relaxed text-ink-muted">
                             {service.short}
