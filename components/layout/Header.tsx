@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-cream/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto flex h-20 w-full max-w-7xl items-center pl-0 pr-5 sm:pr-8 lg:pr-10">
         <Logo />
 
         {/* Desktop nav */}
@@ -42,7 +42,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:ml-auto lg:flex">
+        <div className="hidden items-center gap-3 lg:ml-auto lg:flex lg:pl-8">
           <Button asChild variant="secondary" size="sm">
             <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
           </Button>
