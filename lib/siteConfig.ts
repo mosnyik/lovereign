@@ -4,8 +4,8 @@ export const siteConfig = {
   contactName: "Bunmi Adelusi",
   email: "lovereigncareservices@gmail.com", // TODO: move to branded info@lovereigncareservices.com
   careersEmail: process.env.CAREERS_EMAIL ?? "lovereigncareservices@gmail.com", // TODO: confirm careers inbox
-  phone: "TODO: phone number",
-  phoneHref: "tel:TODO", // TODO: e.g. tel:+1XXXXXXXXXX once phone is confirmed
+  phone: "08063862295", // TODO: confirm final business phone number
+  phoneHref: "tel:08063862295",
   address: "TODO: business address",
   serviceArea: "All counties across TODO: STATE",
   social: {
@@ -18,10 +18,11 @@ export const siteConfig = {
   tawkSrc: process.env.NEXT_PUBLIC_TAWK_SRC,
   nav: [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
+    { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Careers", href: "/careers" },
-    { label: "Resources / FAQ", href: "/resources" },
+    { label: "FAQs", href: "/faq" },
+    { label: "Resources", href: "/resources" },
     { label: "Contact", href: "/contact" },
   ],
   ctas: {

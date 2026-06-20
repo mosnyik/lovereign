@@ -28,9 +28,12 @@ export function ResourcesPreview() {
           ))}
         </div>
 
-        <FadeIn className="mt-10 text-center">
+        <FadeIn className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button asChild variant="secondary" size="lg">
-            <Link href="/resources">Visit Resources &amp; FAQ</Link>
+            <Link href="/faq">View All FAQs</Link>
+          </Button>
+          <Button asChild variant="ghost" size="lg">
+            <Link href="/resources">Browse Articles &amp; Resources</Link>
           </Button>
         </FadeIn>
       </Container>
