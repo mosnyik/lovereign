@@ -40,7 +40,7 @@ export function ApplicationForm({ jobTitle }: { jobTitle: string }) {
   }
 
   return (
-    <form action={formAction} className="space-y-5" encType="multipart/form-data">
+    <form action={formAction} className="space-y-5">
       <input type="hidden" name="jobTitle" value={jobTitle} />
 
       {state.status === "error" && state.message && (

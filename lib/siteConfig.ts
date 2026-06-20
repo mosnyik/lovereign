@@ -13,6 +13,7 @@ export const siteConfig = {
     instagram: "TODO", // TODO: instagram URL
     linkedin: "TODO", // TODO: linkedin URL
   },
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://lovereigncareservices.com", // TODO: confirm production domain
   referralEndpoint: process.env.REFERRAL_ENDPOINT_URL,
   tawkSrc: process.env.NEXT_PUBLIC_TAWK_SRC,
   nav: [
