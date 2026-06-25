@@ -27,7 +27,8 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        image="/images/home-about.jpg"
+        image="/images/contact-hero.jpg"
+        imageAlt="A caregiver talking with a client at home"
         badge="Contact & Referrals"
         title="Let's talk about the care your family needs"
         description="Whether you're exploring care for a loved one or making a professional referral, we're here to help. Reach out and a member of our team will get back to you promptly."
@@ -108,8 +109,17 @@ export default function ContactPage() {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.1} className="flex h-48 items-center justify-center rounded-2xl border border-dashed border-brand-200 bg-brand-50/50 text-center text-sm text-ink-muted">
-              Map placeholder — TODO: embed once business address is confirmed
+            <FadeIn delay={0.1} className="overflow-hidden rounded-2xl border border-brand-100">
+              <iframe
+                title="Lovereign Care Services location"
+                src="https://www.google.com/maps?q=30+Union+Street,+Suite+37,+Elizabeth,+NJ+07202&output=embed"
+                width="100%"
+                height="220"
+                style={{ border: 0, display: "block" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </FadeIn>
           </div>
         </Container>

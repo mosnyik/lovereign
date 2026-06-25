@@ -4,10 +4,10 @@ export const siteConfig = {
   contactName: "Bunmi Adelusi",
   email: "lovereigncareservices@gmail.com", // TODO: move to branded info@lovereigncareservices.com
   careersEmail: process.env.CAREERS_EMAIL ?? "lovereigncareservices@gmail.com", // TODO: confirm careers inbox
-  phone: "08063862295", // TODO: confirm final business phone number
-  phoneHref: "tel:08063862295",
-  address: "TODO: business address",
-  serviceArea: "All counties across TODO: STATE",
+  phone: "+1 (908) 400-2323",
+  phoneHref: "tel:+19084002323",
+  address: "30 Union Street, Suite 37, Elizabeth, NJ 07202",
+  serviceArea: "All counties across New Jersey",
   social: {
     facebook: "TODO", // TODO: facebook URL
     instagram: "TODO", // TODO: instagram URL
