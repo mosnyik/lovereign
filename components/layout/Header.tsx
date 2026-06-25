@@ -21,7 +21,7 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav
-          className="hidden items-center gap-8 lg:ml-14 lg:flex"
+          className="hidden items-center gap-1 lg:ml-6 lg:flex xl:ml-14 xl:gap-8"
           aria-label="Primary"
         >
           {siteConfig.nav.map((item) => {
@@ -32,7 +32,7 @@ export function Header() {
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "rounded-full px-3.5 py-2 text-[15px] font-medium text-ink-muted transition-colors duration-150 hover:bg-brand-50 hover:text-brand-700 active:bg-brand-100",
+                  "rounded-full px-2 py-2 text-sm font-medium text-ink-muted transition-colors duration-150 hover:bg-brand-50 hover:text-brand-700 active:bg-brand-100 xl:px-3.5 xl:text-[15px]",
                   isActive && "bg-brand-50 font-semibold text-brand-700"
                 )}
               >
@@ -42,12 +42,18 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:ml-auto lg:flex lg:pl-8">
+        <div className="hidden items-center gap-2 lg:ml-auto lg:flex lg:pl-3 xl:gap-3 xl:pl-8">
           <Button asChild variant="secondary" size="sm">
-            <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
+            <Link href={siteConfig.ctas.refer.href}>
+              <span className="xl:hidden">Refer</span>
+              <span className="hidden xl:inline">{siteConfig.ctas.refer.label}</span>
+            </Link>
           </Button>
           <Button asChild size="sm">
-            <Link href={siteConfig.ctas.findCare.href}>{siteConfig.ctas.findCare.label}</Link>
+            <Link href={siteConfig.ctas.findCare.href}>
+              <span className="xl:hidden">Find Care</span>
+              <span className="hidden xl:inline">{siteConfig.ctas.findCare.label}</span>
+            </Link>
           </Button>
         </div>
 
