@@ -15,7 +15,7 @@ export const articles: Article[] = [
     slug: "preparing-for-a-care-consultation",
     title: "How to Prepare for Your Free Care Consultation",
     excerpt:
-      "A few simple things to think through before your first conversation with a care provider — so you get the most out of it.",
+      "A few things worth thinking through before your first call with a care provider, so you actually get the most out of it.",
   },
   {
     slug: "supporting-a-family-caregiver",

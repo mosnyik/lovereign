@@ -19,17 +19,17 @@ const pillars = [
   {
     icon: HeartHandshake,
     title: "Compassion",
-    body: "Caregivers who lead with kindness and treat every client with the dignity of family.",
+    body: "We treat every person in our care the way we'd want our own family treated. With patience, warmth, and real respect.",
   },
   {
     icon: Sparkles,
     title: "Personalization",
-    body: "Care plans shaped around each person's needs, routines, and goals — not a checklist.",
+    body: "We fit ourselves around the person, not the other way around. Their routine, their preferences, their pace.",
   },
   {
     icon: ShieldCheck,
     title: "Reliability",
-    body: "Dependable, consistent support across every county, available day or night.",
+    body: "When we say we'll be there, we mean it. Consistent caregivers, clear communication, and a team you can actually reach.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Where we serve</h2>
             <p className="mt-4 text-[16px] leading-relaxed text-ink-muted">
               We serve families across all 21 counties in New Jersey. Wherever your loved one
-              calls home, we can help — reach out and we&apos;ll confirm availability and timing
+              calls home, we can help. Reach out and we&apos;ll confirm availability and timing
               for your area.
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-x-8 gap-y-1.5 text-sm text-ink-muted sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
@@ -137,8 +137,9 @@ export default function AboutPage() {
             </div>
             <h2 className="mt-6 font-serif text-3xl text-brand-900 sm:text-4xl">Meet the team</h2>
             <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-              We&apos;re building out caregiver and staff profiles for this page. Check back soon
-              to meet the people behind Lovereign Care Services.
+              The people behind Lovereign are caregivers, coordinators, and community members who
+              believe in this work personally. We&apos;re adding profiles here soon so you can meet
+              the team before you ever pick up the phone.
             </p>
           </FadeIn>
         </Container>

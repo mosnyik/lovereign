@@ -10,17 +10,17 @@ const pillars = [
   {
     icon: HeartHandshake,
     title: "Compassion",
-    body: "Caregivers who lead with kindness and treat every client with the dignity of family.",
+    body: "We treat every person in our care the way we'd want our own parents treated. With patience, warmth, and real respect.",
   },
   {
     icon: Sparkles,
     title: "Personalization",
-    body: "Care plans shaped around each person's needs, routines, and goals — not a checklist.",
+    body: "We fit ourselves around the person, not the other way around. Their routine, their preferences, their pace.",
   },
   {
     icon: ShieldCheck,
     title: "Reliability",
-    body: "Dependable, consistent support across every county, available day or night.",
+    body: "When we say we'll be there, we mean it. Consistent caregivers, predictable schedules, and a team you can actually reach.",
   },
 ];
 
@@ -44,12 +44,12 @@ export function About() {
           <FadeIn delay={0.08}>
             <h2 className="font-serif text-3xl text-brand-900 sm:text-4xl">Care that feels like family</h2>
             <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-              Lovereign Care Services was built on a simple belief: that everyone deserves to be
-              cared for with warmth, dignity, and respect — in the comfort of their own home. We
-              support families across all counties with personalized home care and behavioral
-              support, delivered by caregivers who show up consistently and treat your loved ones
-              like their own. Whether you need a few hours of help a week or around-the-clock
-              support, we build care around the person — never a one-size-fits-all template.
+              Lovereign was built around one belief: that getting older or needing extra support
+              shouldn&apos;t mean losing your sense of home or who you are. We serve families
+              across all 21 counties in New Jersey with home care and behavioral support, delivered
+              by caregivers who show up consistently and treat your loved ones like their own.
+              Whether it&apos;s a few hours of help a week or around-the-clock support, we build
+              care around the actual person.
             </p>
           </FadeIn>
         </div>

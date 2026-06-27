@@ -21,9 +21,9 @@ export function CtaBanner() {
       />
       <Container className="relative text-center">
         <FadeIn>
-          <h2 className="font-serif text-3xl text-white sm:text-4xl">Care your family can count on</h2>
+          <h2 className="font-serif text-3xl text-white sm:text-4xl">Take the first step. It&apos;s just a conversation.</h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">
-            Take the first step toward dependable, compassionate support for the people you love.
+            No commitment, no pressure. Just an honest talk about what your family needs and how we can help.
           </p>
           <div className="mt-9">
             <Button asChild size="lg">

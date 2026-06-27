@@ -16,11 +16,10 @@ export function ServicesPreview() {
         <FadeIn className="mx-auto max-w-2xl text-center">
           <Badge>Our Services</Badge>
           <h2 className="mt-5 font-serif text-3xl text-brand-900 sm:text-4xl">
-            Support that meets every need
+            Whatever they need, we have something that fits
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-            From everyday help at home to specialized behavioral support — every plan is built
-            around the person receiving care.
+            From help getting dressed in the morning to specialized behavioral support, every plan starts with the actual person, not a list of available services.
           </p>
         </FadeIn>
 

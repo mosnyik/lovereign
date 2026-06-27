@@ -16,9 +16,9 @@ export const jobs: Job[] = [
     type: "Part-Time",
     county: "All New Jersey Counties",
     summary:
-      "Provide compassionate in-home assistance with personal care, daily living activities, and companionship — making a meaningful difference in a client's life every day.",
+      "Help clients with personal care, daily tasks, and companionship in their own homes. Every day you show up matters more than you might think.",
     description:
-      "Caregivers at Lovereign Care Services are the friendly, dependable presence that helps clients feel safe, comfortable, and cared for in their own homes. You'll assist with a range of personal care and household tasks while building genuine relationships with the people you serve. No two days are exactly alike, and your warmth, patience, and reliability are what matter most. We welcome both experienced caregivers and compassionate individuals new to the field — we'll provide the support and training you need to thrive.",
+      "Caregivers at Lovereign are the steady, friendly presence that helps clients feel safe and at ease in their own homes. You'll help with personal care and household tasks, and over time you'll build real relationships with the people you work with. No two days are exactly alike, and patience and reliability matter more than a long resume. We welcome experienced caregivers and people new to the field alike. We'll make sure you have the training and support you need.",
     responsibilities: [
       "Assist clients with personal care tasks including bathing, dressing, grooming, and toileting",
       "Prepare meals and assist with eating and staying nourished",
@@ -43,9 +43,9 @@ export const jobs: Job[] = [
     type: "Full-Time",
     county: "All New Jersey Counties",
     summary:
-      "Deliver direct, hands-on patient care under RN supervision, supporting clients with clinical personal care, monitoring, and daily living needs in the home setting.",
+      "Deliver hands-on patient care under RN supervision, supporting clients with clinical personal care and monitoring in their homes.",
     description:
-      "As a Certified Nursing Assistant at Lovereign Care Services, you'll provide essential clinical personal care to clients in their homes under the supervision of a Registered Nurse. You'll be the front-line presence that keeps clients comfortable, monitors their day-to-day condition, and communicates changes to the nursing team. This role is ideal for a CNA who wants to build strong, ongoing relationships with clients rather than rotating across a facility floor.",
+      "As a CNA at Lovereign, you'll provide clinical personal care to clients in their homes under the supervision of a Registered Nurse. You'll be the consistent presence that keeps clients comfortable, monitors their condition day to day, and flags changes to the nursing team. This is a good fit for CNAs who want to build ongoing relationships with patients rather than moving across a facility floor.",
     responsibilities: [
       "Assist clients with bathing, dressing, grooming, oral hygiene, and toileting",
       "Take and record vital signs (temperature, blood pressure, pulse, respiration) as directed",
@@ -70,9 +70,9 @@ export const jobs: Job[] = [
     type: "Per-Diem",
     county: "All New Jersey Counties",
     summary:
-      "Provide skilled nursing assessments, care plan oversight, and clinical guidance to clients receiving home health services across New Jersey.",
+      "Conduct in-home nursing assessments, oversee care plans, and serve as a clinical resource for clients, families, and our care staff across New Jersey.",
     description:
-      "As a Registered Nurse at Lovereign Care Services, you will play a central role in ensuring the clinical quality and safety of our home health program. You will conduct initial and ongoing assessments, develop and supervise individualized care plans, and serve as a trusted resource for clients, families, and our direct care staff. This role is ideal for an RN who thrives in a community setting and values autonomy alongside collaborative, multidisciplinary teamwork.",
+      "As an RN at Lovereign, you'll be central to the clinical quality of our home health program. You'll conduct assessments, develop and supervise care plans, and be a resource families and staff can rely on. This role works well for nurses who prefer the autonomy of community-based care and like building ongoing relationships with patients rather than rotating through a facility floor.",
     responsibilities: [
       "Perform comprehensive in-home nursing assessments and reassessments",
       "Develop, implement, and update individualized care plans in coordination with physicians and care teams",
@@ -97,9 +97,9 @@ export const jobs: Job[] = [
     type: "Part-Time",
     county: "All New Jersey Counties",
     summary:
-      "Provide personal care, companionship, and daily living support to clients in their homes — making a real difference in someone's life every shift.",
+      "Provide personal care, companionship, and daily living support to clients in their own homes.",
     description:
-      "Home Health Aides at Lovereign Care Services are the heart of what we do. You will work one-on-one with clients in their own homes, assisting with personal care, household tasks, and daily routines while providing a friendly, reassuring presence. We value caregivers who are reliable, patient, and genuinely passionate about the people they serve — and we invest in your growth through ongoing training and consistent scheduling.",
+      "Home Health Aides at Lovereign are at the center of what we do. You'll work one-on-one with clients in their homes, helping with personal care, household tasks, and daily routines. We want people who are reliable and patient and actually care about the people they work with. In return, we invest in your training and make sure you have the schedule you need.",
     responsibilities: [
       "Assist clients with personal care including bathing, dressing, grooming, and oral hygiene",
       "Provide mobility assistance, safe transfers, and fall-risk prevention",
@@ -125,9 +125,9 @@ export const jobs: Job[] = [
     type: "Full-Time",
     county: "All New Jersey Counties",
     summary:
-      "Support individuals with Intellectual and Developmental Disabilities in building independence, developing life skills, and participating fully in their communities.",
+      "Support individuals with Intellectual and Developmental Disabilities in building everyday skills, gaining independence, and staying connected to their communities.",
     description:
-      "As a Direct Support Professional at Lovereign Care Services, you will provide person-centered support to individuals with Intellectual and Developmental Disabilities (IDD), autism spectrum disorder, and related conditions — empowering them to live as independently and fully as possible. Working within an individualized support plan, you will help clients develop daily living skills, navigate their community, and reach personal goals, while implementing positive behavior support strategies under the guidance of clinical staff.",
+      "As a Direct Support Professional at Lovereign, you'll work alongside individuals with Intellectual and Developmental Disabilities (IDD), autism spectrum disorder, and related conditions, helping them live as independently as possible. You'll help clients build daily living skills, get around their community, and work toward their personal goals, while following positive behavior support strategies with guidance from clinical staff.",
     responsibilities: [
       "Implement individualized support plans and Behavior Intervention Plans (BIPs) as directed",
       "Assist clients with daily living skills including meal preparation, hygiene, household management, and money management",
@@ -154,9 +154,9 @@ export const jobs: Job[] = [
     type: "Per-Diem",
     county: "All New Jersey Counties",
     summary:
-      "Provide skilled nursing care to home health clients under RN and physician supervision, including medication administration, wound care, and ongoing patient monitoring.",
+      "Provide skilled nursing care to home health clients under RN and physician supervision, including medication administration, wound care, and patient monitoring.",
     description:
-      "Licensed Practical Nurses at Lovereign Care Services deliver focused, skilled nursing care to clients in their homes, working within a collaborative care team led by Registered Nurses and physicians. You'll carry out clinical tasks, monitor client health, educate clients and families, and maintain thorough documentation — all while building the kind of trusting, ongoing relationship that makes home-based care so effective. This is a great opportunity for an LPN looking to work in a community health setting with meaningful one-on-one client contact.",
+      "LPNs at Lovereign deliver focused skilled nursing care to clients in their homes, working within a care team led by RNs and physicians. You'll handle clinical tasks, keep an eye on how clients are doing, teach clients and families what they need to know, and keep thorough documentation. It's a good fit for an LPN who wants real one-on-one time with patients and prefers the community health setting over a facility.",
     responsibilities: [
       "Administer medications, injections, and IV therapy as prescribed and permitted under NJ LPN scope of practice",
       "Perform wound care, dressing changes, catheter care, and other clinical procedures as directed",
@@ -181,9 +181,9 @@ export const jobs: Job[] = [
     type: "Full-Time",
     county: "All New Jersey Counties",
     summary:
-      "Support the daily operations of Lovereign Care Services through scheduling, client intake, staff coordination, and general office administration.",
+      "Keep things running behind the scenes through scheduling, client intake, staff coordination, and general office work.",
     description:
-      "Our administrative team keeps everything running smoothly behind the scenes — from coordinating caregiver schedules and supporting client intake to managing records and handling day-to-day communications. If you're organized, people-focused, and thrive in a fast-paced environment where your work directly supports a compassionate mission, we'd love to hear from you. We have a range of administrative positions available, from intake coordinators and scheduling specialists to billing support and office managers.",
+      "Our administrative team is what keeps the operation together. From coordinating caregiver schedules and handling client intake to managing records and day-to-day communications, this work directly affects how well we serve our clients. If you're organized, good with people, and want a role where your work has a real impact, we'd like to hear from you. We have a range of admin roles available, from intake coordination and scheduling to billing support and office management.",
     responsibilities: [
       "Coordinate caregiver scheduling to ensure consistent, reliable coverage for all clients",
       "Support the client intake and onboarding process, including gathering information and communicating with families",

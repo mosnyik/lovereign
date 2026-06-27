@@ -10,9 +10,8 @@ export function CareersTeaser() {
         <FadeIn>
           <h2 className="font-serif text-3xl text-brand-900 sm:text-4xl">Join a team that cares</h2>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-muted">
-            We&apos;re always looking for compassionate, dependable caregivers who want to make a
-            real difference in people&apos;s lives. If that sounds like you, we&apos;d love to
-            meet you.
+            We&apos;re looking for good people who show up, care about others, and want work that
+            actually means something. If that&apos;s you, we&apos;d love to talk.
           </p>
         </FadeIn>
         <FadeIn delay={0.08}>

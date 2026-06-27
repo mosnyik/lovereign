@@ -19,7 +19,7 @@ export const services: Service[] = [
     title: "Personal Care",
     short: "Respectful, hands-on help with bathing, dressing, grooming, and daily hygiene.",
     intro:
-      "Personal care is at the heart of helping someone stay comfortable and confident at home. Our caregivers provide respectful, attentive assistance with the daily tasks that can become difficult over time — always at the client's pace and with their dignity front of mind. This can include help with bathing, dressing, grooming, toileting, and mobility, as well as encouragement and a friendly presence throughout the day.",
+      "Personal care is at the heart of helping someone stay comfortable and confident at home. Our caregivers assist with the daily tasks that can become difficult over time. We work at their pace, and we never rush. That includes help with bathing, dressing, grooming, toileting, and mobility, plus a friendly presence throughout the day.",
     includes: [
       "Bathing, dressing, grooming, and oral hygiene",
       "Mobility assistance, transfers, and fall-risk awareness",
@@ -37,7 +37,7 @@ export const services: Service[] = [
     title: "Companion Care",
     short: "Friendly company plus help with errands, light housekeeping, and everyday routines.",
     intro:
-      "Staying socially connected and on top of daily life matters just as much as physical care. Companion care pairs your loved one with a caregiver who provides genuine company and a helping hand around the home — easing isolation and keeping daily routines running smoothly.",
+      "Staying connected and on top of daily life matters just as much as physical care. Companion care pairs your loved one with a caregiver who provides real company and a helping hand around the home, keeping routines on track and the day from feeling too long.",
     includes: [
       "Companionship and conversation",
       "Light housekeeping and laundry",
@@ -56,7 +56,7 @@ export const services: Service[] = [
     title: "Respite Care",
     short: "Reliable temporary care so family caregivers can rest and recharge.",
     intro:
-      "Caring for a loved one is rewarding, but it can also be exhausting — and caregivers need care too. Respite care gives family caregivers a dependable break, knowing their loved one is in warm, capable hands. Whether you need a few hours, a weekend, or longer, we step in seamlessly and keep routines consistent.",
+      "Caring for a loved one is rewarding, but it can wear you down. Caregivers need a break too. Respite care gives family caregivers time to rest and recharge, knowing their loved one is in good hands. Whether you need a few hours, a full weekend, or longer, we step in and keep things consistent.",
     includes: [
       "Short-term or scheduled relief care",
       "Coverage for vacations, travel, or family events",
@@ -73,7 +73,7 @@ export const services: Service[] = [
     title: "24-Hour & Live-In Care",
     short: "Around-the-clock support for those who need help at any hour.",
     intro:
-      "Some situations call for support that's always present. Our 24-hour and live-in care provides continuous, attentive assistance — day and night — so your loved one is never alone when they need help. We coordinate caregivers thoughtfully to ensure consistency, safety, and genuine rest for everyone involved.",
+      "Some situations call for someone to always be there. Our 24-hour and live-in care means your loved one is never alone when they need help. We coordinate caregivers carefully so there's always a familiar face, a consistent routine, and real rest for everyone in the household.",
     includes: [
       "Overnight and around-the-clock supervision",
       "Assistance at any hour with personal care and mobility",
@@ -91,7 +91,7 @@ export const services: Service[] = [
     title: "Post-Hospital / Transitional Care",
     short: "Extra support during recovery and the return home after a hospital stay.",
     intro:
-      "The days and weeks after a hospital stay are when extra help matters most. Transitional care supports a safe, smooth recovery at home — reducing the stress on families and helping prevent setbacks during a vulnerable time.",
+      "The days and weeks after a hospital stay are when extra help matters most. Transitional care supports a smooth recovery at home, takes some of the weight off your family, and helps prevent setbacks during a time when things are still fragile.",
     includes: [
       "Help settling back in and following discharge routines",
       "Personal care and mobility support during recovery",
@@ -99,7 +99,7 @@ export const services: Service[] = [
       "Meal preparation and household support",
       "A watchful, caring presence as strength returns",
     ],
-    closing: "We help your loved one recover where they're most comfortable — at home.",
+    closing: "We help your loved one recover at home, where they're most comfortable.",
     image: "/images/transitional-care.jpg",
     imageAlt: "A caregiver providing attentive support to someone using a wheelchair during recovery",
   },
@@ -109,7 +109,7 @@ export const services: Service[] = [
     title: "Behavioral Support Services",
     short: "Individualized, Positive Behavior Support for people with IDD, autism, and related conditions.",
     intro:
-      "Our Behavioral Support Services are designed to help individuals with Intellectual and Developmental Disabilities (IDD), autism spectrum disorder, and related behavioral or emotional challenges live more confidently and independently. Grounded in Positive Behavior Support (PBS) principles, our Direct Support Professionals work to understand the purpose behind each behavior and replace challenges with meaningful skills — without punishment or shame. We partner closely with Board Certified Behavior Analysts (BCBAs), case managers, and families to carry out individualized Behavior Intervention Plans with consistency across home and community settings.",
+      "Our Behavioral Support Services are built for individuals with Intellectual and Developmental Disabilities (IDD), autism spectrum disorder, and related behavioral or emotional challenges. Our Direct Support Professionals work from Positive Behavior Support (PBS) principles, taking time to understand what's behind each behavior and helping build skills that actually stick, without punishment or shame. We work closely with Board Certified Behavior Analysts (BCBAs), case managers, and families to carry out Behavior Intervention Plans consistently across home and community settings.",
     includes: [
       "Functional Behavior Assessment (FBA) collaboration and Behavior Intervention Plan (BIP) implementation",
       "Positive Behavior Support (PBS) strategies tailored to each individual",
@@ -121,7 +121,7 @@ export const services: Service[] = [
       "Family and caregiver training and ongoing guidance",
     ],
     closing:
-      "We serve individuals across the lifespan — children, adolescents, and adults — whose needs range from mild behavioral guidance to intensive, structured support. Every plan is reviewed regularly and updated as the individual grows and goals evolve.",
+      "We work with children, adolescents, and adults whose needs range from mild behavioral guidance to intensive, structured support. Every plan gets reviewed regularly and updated as the person grows and their goals shift.",
     image: "/images/behavioral-support.jpg",
     imageAlt: "Two women having a calm, supportive conversation together on a couch",
   },
@@ -131,7 +131,7 @@ export const services: Service[] = [
     title: "Daily Living & Community Support",
     short: "Help building independence in everyday tasks and community participation.",
     intro:
-      "Independence grows with the right support. This service helps individuals build and maintain everyday living skills and stay connected to their community — at a pace that's comfortable and encouraging.",
+      "Independence grows with the right kind of support. This service helps people build and hold onto everyday living skills while staying connected to their community, at whatever pace works for them.",
     includes: [
       "Support with daily living skills and routines",
       "Encouragement with personal organization and tasks",

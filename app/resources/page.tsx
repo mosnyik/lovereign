@@ -20,7 +20,7 @@ export default function ResourcesPage() {
         image="/images/community-support.jpg"
         badge="Resources"
         title="Articles & guidance for families"
-        description="Practical reading on caregiving, aging at home, and getting started with care — written for the people making these decisions, not for clinicians."
+        description="Practical reading on caregiving, aging at home, and getting started with care. Written for families making these decisions, not for clinicians."
       />
 
       <section className="py-16 sm:py-20">

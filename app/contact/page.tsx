@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 };
 
 const expectations = [
-  "We'll listen and learn about your loved one's needs",
-  "We'll explain how our care works and answer your questions",
-  "We'll outline a personalized plan and clear next steps",
-  "You'll get a prompt, no-pressure response",
+  "We'll actually listen to what's going on with your loved one",
+  "We'll explain how we work and answer every question you have",
+  "We'll put together a plan that fits your family's situation",
+  "You'll hear back quickly, and there's never any pressure",
 ];
 
 export default function ContactPage() {
@@ -31,7 +31,7 @@ export default function ContactPage() {
         imageAlt="A caregiver talking with a client at home"
         badge="Contact & Referrals"
         title="Let's talk about the care your family needs"
-        description="Whether you're exploring care for a loved one or making a professional referral, we're here to help. Reach out and a member of our team will get back to you promptly."
+        description="Whether you're just starting to look into care options or you know exactly what you need, we're glad you're here. Send us a message and someone will get back to you, usually the same day."
       />
 
       <section className="py-16 sm:py-20">
@@ -40,7 +40,7 @@ export default function ContactPage() {
             <div id="family" className="scroll-mt-24">
               <FadeIn>
                 <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Family Intake</h2>
-                <p className="mt-2 text-ink-muted">For families exploring care for a loved one.</p>
+                <p className="mt-2 text-ink-muted">Fill this out and we&apos;ll reach out to schedule a free, no-pressure conversation.</p>
               </FadeIn>
               <FadeIn delay={0.06} className="mt-7">
                 <FamilyIntakeForm />
@@ -51,8 +51,8 @@ export default function ContactPage() {
               <FadeIn>
                 <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Professional Referral</h2>
                 <p className="mt-2 text-ink-muted">
-                  For case managers and care professionals. Client information is routed through a
-                  secure channel — never sent by email.
+                  For case managers and care professionals. All referral information goes through a
+                  secure channel, not email, so client details stay protected.
                 </p>
               </FadeIn>
               <FadeIn delay={0.06} className="mt-7">

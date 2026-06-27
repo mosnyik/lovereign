@@ -25,7 +25,7 @@ export default function ServicesPage() {
         image="/images/services-hero.jpg"
         badge="Our Services"
         title="Support that meets every need"
-        description="From everyday help at home to specialized behavioral support, every Lovereign care plan is built around the person receiving it — never a one-size-fits-all template."
+        description="No two people need exactly the same kind of care. Every plan we build starts with getting to know the person: their routine, their preferences, and what makes them feel most at home."
       />
 
       <section className="py-16 sm:py-20">
@@ -75,7 +75,7 @@ export default function ServicesPage() {
           <FadeIn>
             <h2 className="font-serif text-3xl text-white sm:text-4xl">Not sure where to start?</h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">
-              Tell us about your situation and we&apos;ll help you find the right kind of support.
+              Most families aren&apos;t sure what kind of care they need at first. That&apos;s okay. Tell us what&apos;s going on and we&apos;ll figure it out together.
             </p>
             <div className="mt-8">
               <Button asChild size="lg">

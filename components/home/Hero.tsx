@@ -7,10 +7,10 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { siteConfig } from "@/lib/siteConfig";
 
 const expectations = [
-  "We'll listen to your situation and the kind of support your loved one needs",
-  "We'll explain how our care works and answer every question you have",
-  "We'll outline a personalized care plan and what it would look like day to day",
-  "You'll leave with clear next steps — whether or not you choose to work with us",
+  "We'll actually listen to what's going on with your loved one",
+  "We'll walk you through how we work and answer every question, no matter how small",
+  "We'll sketch out a care plan that fits your loved one's life and routine",
+  "You'll leave with a clear picture of what comes next. No pressure, no obligation.",
 ];
 
 export function Hero() {
@@ -35,14 +35,14 @@ export function Hero() {
             Home Care &amp; Behavioral Support
           </span>
           <h1 className="mt-6 max-w-xl font-serif text-4xl font-medium leading-[1.1] text-white sm:text-5xl lg:text-[3.25rem]">
-            Compassionate home care and behavioral support —{" "}
-            <span className="italic text-lavender-200">for every family, in every county.</span>
+            Trusted home care for the people{" "}
+            <span className="italic text-lavender-200">who matter most to you.</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80">
-            At Lovereign Care Services, we provide warm, dependable care that helps your loved
-            ones live safely and comfortably at home. From everyday personal care to specialized
-            behavioral support, our caregivers treat the people you love with the dignity,
-            patience, and respect they deserve.
+            When someone you love needs extra help, you want to know the person walking through
+            their door actually cares. At Lovereign, our caregivers build real relationships,
+            show up on time, and treat your family the way they&apos;d want their own to be
+            treated.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
