@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
@@ -39,6 +39,15 @@ export default async function ServiceDetailPage(props: PageProps<"/services/[slu
 
       <section className="py-16 sm:py-20">
         <Container className="max-w-3xl">
+          <FadeIn>
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-semibold text-brand-700 shadow-sm transition-colors hover:bg-brand-50 hover:text-brand-900"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              Back to all services
+            </Link>
+          </FadeIn>
           <FadeIn>
             <h2 className="font-serif text-2xl text-brand-800">What this can include</h2>
             <ul className="mt-6 space-y-4">
