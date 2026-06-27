@@ -2,18 +2,18 @@ export const siteConfig = {
   brand: "Lovereign Care Services",
   tagline: "Care that feels like family",
   contactName: "Bunmi Adelusi",
-  email: "lovereigncareservices@gmail.com", // TODO: move to branded info@lovereigncareservices.com
-  careersEmail: process.env.CAREERS_EMAIL ?? "lovereigncareservices@gmail.com", // TODO: confirm careers inbox
+  email: "lovereigncareservices@gmail.com",
+  careersEmail: process.env.CAREERS_EMAIL ?? "lovereigncareservices@gmail.com",
   phone: "+1 (908) 400-2323",
   phoneHref: "tel:+19084002323",
   address: "30 Union Street, Suite 37, Elizabeth, NJ 07202",
   serviceArea: "All counties across New Jersey",
   social: {
-    facebook: "TODO", // TODO: facebook URL
-    instagram: "TODO", // TODO: instagram URL
-    linkedin: "TODO", // TODO: linkedin URL
+    facebook: "",
+    instagram: "",
+    linkedin: "",
   },
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://lovereigncareservices.com", // TODO: confirm production domain
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://www.lovereigncareservices.care",
   referralEndpoint: process.env.REFERRAL_ENDPOINT_URL,
   tawkSrc: process.env.NEXT_PUBLIC_TAWK_SRC,
   nav: [

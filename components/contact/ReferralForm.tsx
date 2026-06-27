@@ -47,7 +47,7 @@ export function ReferralForm({ isConfigured }: { isConfigured: boolean }) {
           <p className="text-[15px] font-semibold text-amber-900">Secure submission isn&apos;t configured yet</p>
           <p className="mt-1.5 text-[14px] text-amber-800">
             Client information must be sent through a secure, BAA-backed channel — not email. Please call{" "}
-            <a className="font-semibold underline" href="tel:TODO">us directly</a> so we can help without putting protected health information at risk.
+            <a className="font-semibold underline" href="tel:+19084002323">us directly</a> so we can help without putting protected health information at risk.
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export function ReferralForm({ isConfigured }: { isConfigured: boolean }) {
           id="careNeeds"
           name="careNeeds"
           required
-          placeholder="TODO: confirm exact fields needed for referrals — client initials, care type, urgency, etc."
+          placeholder="Include client initials, care type needed, urgency, any relevant diagnoses or behavioral considerations, and preferred start date."
         />
         {state.errors?.careNeeds && <p className="mt-1.5 text-sm text-red-600">{state.errors.careNeeds}</p>}
       </div>

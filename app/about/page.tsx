@@ -46,17 +46,24 @@ export default function AboutPage() {
         <Container className="grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:items-center">
           <FadeIn>
             <p className="text-lg leading-relaxed text-ink-muted">
-              Lovereign Care Services was built on a simple belief: that everyone deserves to be
-              cared for with warmth, dignity, and respect — in the comfort of their own home. We
-              support families across all counties with personalized home care and behavioral
-              support, delivered by caregivers who show up consistently and treat your loved ones
-              like their own.
+              At Lovereign Services, we believe everyone deserves compassionate, high-quality care
+              that empowers them to live with dignity, independence, and confidence. Based in New
+              Jersey, we provide trusted Home Health Aide (HHA) services and specialized support
+              for individuals with Intellectual and Developmental Disabilities (IDD), helping
+              clients thrive in the comfort of their homes and communities.
             </p>
             <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-              Whether you need a few hours of help a week or around-the-clock support, we build
-              care around the person — never a one-size-fits-all template. Our mission is to give
-              families peace of mind and give the people we care for a life lived with dignity,
-              wherever they call home.
+              Our mission is to deliver person-centered care that enhances quality of life while
+              promoting independence, inclusion, and overall well-being. We are committed to
+              building meaningful relationships with our clients and their families through
+              professionalism, respect, and unwavering compassion.
+            </p>
+            <p className="mt-5 text-lg leading-relaxed text-ink-muted">
+              What sets Lovereign Services apart is our people-first approach. We don&apos;t just
+              provide care; we create personalized support experiences tailored to each
+              individual&apos;s unique needs, goals, and abilities. By combining skilled
+              professionals with genuine compassion, we help every client feel valued, supported,
+              and empowered every step of the way.
             </p>
           </FadeIn>
           <FadeIn delay={0.08}>
@@ -97,21 +104,27 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <Container className="grid gap-10 lg:grid-cols-2">
+        <Container>
           <FadeIn>
             <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Where we serve</h2>
             <p className="mt-4 text-[16px] leading-relaxed text-ink-muted">
-              {siteConfig.serviceArea}. Wherever your loved one calls home, we can help — reach
-              out and we&apos;ll confirm availability and timing for your area.
+              We serve families across all 21 counties in New Jersey. Wherever your loved one
+              calls home, we can help — reach out and we&apos;ll confirm availability and timing
+              for your area.
             </p>
-          </FadeIn>
-          <FadeIn delay={0.08}>
-            <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Licensing &amp; credentials</h2>
-            <p className="mt-4 text-[16px] leading-relaxed text-ink-muted">
-              TODO: license number(s), state certifications, and any accreditations to display
-              here — these are key trust signals for families and case managers and should be
-              confirmed before launch.
-            </p>
+            <ul className="mt-6 grid grid-cols-2 gap-x-8 gap-y-1.5 text-sm text-ink-muted sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+              {[
+                "Atlantic","Bergen","Burlington","Camden","Cape May",
+                "Cumberland","Essex","Gloucester","Hudson","Hunterdon",
+                "Mercer","Middlesex","Monmouth","Morris","Ocean",
+                "Passaic","Salem","Somerset","Sussex","Union","Warren",
+              ].map((county) => (
+                <li key={county} className="flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-400" aria-hidden="true" />
+                  {county}
+                </li>
+              ))}
+            </ul>
           </FadeIn>
         </Container>
       </section>

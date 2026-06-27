@@ -99,7 +99,7 @@ export default function ContactPage() {
                 ].map((link) => (
                   <a
                     key={link.label}
-                    href={link.href === "TODO" ? "#" : link.href}
+                    href={link.href || "#"}
                     aria-label={link.label}
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-brand-100 text-brand-700 hover:bg-brand-50"
                   >

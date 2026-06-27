@@ -9,12 +9,7 @@ import { Logo } from "@/components/layout/Logo";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { cn } from "@/lib/utils";
 
-const quickLinks = [
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contact" },
-];
+const quickLinks = siteConfig.nav;
 
 const socialLinks = [
   { label: "Facebook", href: siteConfig.social.facebook, icon: FacebookIcon },
@@ -84,7 +79,7 @@ export function Footer() {
             {socialLinks.map((link) => (
               <a
                 key={link.label}
-                href={link.href === "TODO" ? "#" : link.href}
+                href={link.href || "#"}
                 aria-label={link.label}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 transition-colors duration-150 hover:bg-white/10 hover:border-white/30 active:bg-white/20"
               >

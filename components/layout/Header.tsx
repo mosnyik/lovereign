@@ -43,12 +43,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:ml-auto lg:flex lg:pl-3 xl:gap-3 xl:pl-8">
-          <Button asChild variant="secondary" size="sm">
-            <Link href={siteConfig.ctas.refer.href}>
-              <span className="xl:hidden">Refer</span>
-              <span className="hidden xl:inline">{siteConfig.ctas.refer.label}</span>
-            </Link>
-          </Button>
           <Button asChild size="sm">
             <Link href={siteConfig.ctas.findCare.href}>
               <span className="xl:hidden">Find Care</span>
@@ -97,9 +91,6 @@ export function Header() {
                 );
               })}
               <div className="mt-2 flex flex-col gap-2.5 px-3">
-                <Button asChild variant="secondary" onClick={() => setOpen(false)}>
-                  <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
-                </Button>
                 <Button asChild onClick={() => setOpen(false)}>
                   <Link href={siteConfig.ctas.findCare.href}>{siteConfig.ctas.findCare.label}</Link>
                 </Button>

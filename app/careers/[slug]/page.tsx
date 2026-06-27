@@ -1,3 +1,4 @@
+
 import { notFound } from "next/navigation";
 import { Clock, MapPin } from "lucide-react";
 import { Container } from "@/components/ui/container";
