@@ -49,7 +49,7 @@ export default async function ServiceDetailPage(props: PageProps<"/services/[slu
             </Link>
           </FadeIn>
           <FadeIn>
-            <h2 className="font-serif text-2xl text-brand-800">What this can include</h2>
+            <h2 className="mt-10 font-serif text-2xl text-brand-800">What this can include</h2>
             <ul className="mt-6 space-y-4">
               {service.includes.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[16px] text-ink-muted">
