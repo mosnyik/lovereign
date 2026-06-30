@@ -29,12 +29,14 @@ export const faqs: Faq[] = [
     answer:
       "Home care covers everyday support like personal care, companionship, and help around the house. Behavioral support is more specialized, focused on helping people build stability, routine, and independence. Many clients benefit from a bit of both.",
   },
+  /* REFERRAL FAQ — commented out, restore by uncommenting
   {
     audience: "referral",
     question: "How does the referral process work for case managers?",
     answer:
       "Professional referrals are submitted through our secure referral form, kept separate from general email so client information is handled appropriately. Once submitted, our team follows up promptly to coordinate next steps and keep you informed.",
   },
+  */
   {
     audience: "family",
     question: "Can care start quickly if we need help right away?",

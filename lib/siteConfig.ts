@@ -14,7 +14,7 @@ export const siteConfig = {
     linkedin: "",
   },
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://www.lovereigncareservices.care",
-  referralEndpoint: process.env.REFERRAL_ENDPOINT_URL,
+  // referralEndpoint: process.env.REFERRAL_ENDPOINT_URL,
   tawkSrc: process.env.NEXT_PUBLIC_TAWK_SRC,
   nav: [
     { label: "Home", href: "/" },
@@ -27,7 +27,7 @@ export const siteConfig = {
   ],
   ctas: {
     findCare: { label: "Find Care for a Loved One", href: "/contact#family" },
-    refer: { label: "Refer a Client", href: "/contact#referral" },
+    // refer: { label: "Refer a Client", href: "/contact#referral" },
     join: { label: "Join Our Team", href: "/careers" },
   },
   legal: [

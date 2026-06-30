@@ -4,14 +4,17 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/layout/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { FamilyIntakeForm } from "@/components/contact/FamilyIntakeForm";
-import { ReferralForm } from "@/components/contact/ReferralForm";
+// import { ReferralForm } from "@/components/contact/ReferralForm";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Contact / Referral",
+  title: "Contact",
+  // title: "Contact / Referral",
   description:
-    "Reach out for family care intake or submit a professional referral to Lovereign Care Services.",
+    "Reach out for family care intake.",
+  // description:
+  //   "Reach out for family care intake or submit a professional referral to Lovereign Care Services.",
 };
 
 const expectations = [
@@ -22,14 +25,15 @@ const expectations = [
 ];
 
 export default function ContactPage() {
-  const referralConfigured = Boolean(siteConfig.referralEndpoint);
+  // const referralConfigured = Boolean(siteConfig.referralEndpoint);
 
   return (
     <>
       <PageHero
         image="/images/contact-hero.jpg"
         imageAlt="A caregiver talking with a client at home"
-        badge="Contact & Referrals"
+        badge="Contact Us"
+        // badge="Contact & Referrals"
         title="Let's talk about the care your family needs"
         description="Whether you're just starting to look into care options or you know exactly what you need, we're glad you're here. Send us a message and someone will get back to you, usually the same day."
       />
@@ -47,6 +51,7 @@ export default function ContactPage() {
               </FadeIn>
             </div>
 
+            {/* REFERRAL SECTION — commented out, restore by uncommenting
             <div id="referral" className="scroll-mt-24 border-t border-brand-100 pt-14">
               <FadeIn>
                 <h2 className="font-serif text-2xl text-brand-900 sm:text-3xl">Professional Referral</h2>
@@ -59,6 +64,7 @@ export default function ContactPage() {
                 <ReferralForm isConfigured={referralConfigured} />
               </FadeIn>
             </div>
+            */}
           </div>
 
           <div className="space-y-8">

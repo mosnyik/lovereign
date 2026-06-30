@@ -76,6 +76,7 @@ export async function submitFamilyIntake(
   return { status: "success", message: "Thank you — we've received your message and will be in touch promptly." };
 }
 
+/* REFERRAL SCHEMA & ACTION — commented out, restore by uncommenting
 const referralSchema = z.object({
   referrerName: z.string().min(2, "Please enter your name."),
   organization: z.string().min(1, "Please enter your organization."),
@@ -123,3 +124,4 @@ export async function submitReferral(
 
   return { status: "success", message: "Thank you — the referral has been securely submitted. We'll follow up promptly." };
 }
+*/
