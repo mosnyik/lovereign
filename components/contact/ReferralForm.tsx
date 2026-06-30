@@ -1,5 +1,7 @@
 "use client";
 
+/* REFERRAL FORM — commented out, restore by removing the comment markers and deleting the stub below
+
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { CheckCircle2, AlertCircle, Loader2, ShieldAlert } from "lucide-react";
@@ -109,4 +111,11 @@ export function ReferralForm({ isConfigured }: { isConfigured: boolean }) {
       <SubmitButton disabled={!isConfigured} />
     </form>
   );
+}
+
+*/
+
+// Stub — delete this when restoring the component above
+export function ReferralForm(_props: { isConfigured: boolean }): null {
+  return null;
 }

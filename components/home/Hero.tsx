@@ -48,9 +48,11 @@ export function Hero() {
             <Button asChild size="lg">
               <Link href={siteConfig.ctas.findCare.href}>{siteConfig.ctas.findCare.label}</Link>
             </Button>
+            {/* REFERRAL CTA — commented out, restore by uncommenting
             <Button asChild variant="outline" size="lg">
               <Link href={siteConfig.ctas.refer.href}>{siteConfig.ctas.refer.label}</Link>
             </Button>
+            */}
           </div>
         </FadeIn>
 

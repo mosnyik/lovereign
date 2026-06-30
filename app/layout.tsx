@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Newsreader, Figtree } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import TawkTo from "@/components/TawkTo";
 import { siteConfig } from "@/lib/siteConfig";
 
-const newsreader = Newsreader({
+const newsreader = localFont({
+  src: [
+    { path: "./fonts/newsreader-normal-latin.woff2", style: "normal", weight: "200 800" },
+    { path: "./fonts/newsreader-italic-latin.woff2", style: "italic", weight: "200 800" },
+  ],
   variable: "--font-newsreader",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
-const figtree = Figtree({
+const figtree = localFont({
+  src: "./fonts/figtree-latin.woff2",
   variable: "--font-figtree",
-  subsets: ["latin"],
+  weight: "300 900",
+  display: "swap",
+  adjustFontFallback: "Arial",
 });
 
 const defaultTitle = `${siteConfig.brand} | Home Care & Behavioral Support`;
